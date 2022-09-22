@@ -2,15 +2,19 @@
   "name": "ip-address-tracker-master",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://just36.github.io/ip-address-tracker",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html --out-dir=build"
+    "build": "parcel build index.html --out-dir=build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "parcel-bundler": "^1.3.1"
   },
   "dependencies": {
